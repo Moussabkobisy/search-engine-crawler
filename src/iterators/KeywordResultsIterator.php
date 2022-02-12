@@ -19,7 +19,7 @@ class KeywordResultsIterator extends AbstractResultIterator
             $this->results[$key]['url'] = $result->link??'no link available';
             $this->results[$key]['title'] = $result->title??'no title available';
             $this->results[$key]['description'] = $result->snippet??'no description available';
-            $this->results[$key]['keyword'] = 'keyword'??'no keyword available';
+            $this->results[$key]['keyword'] = $this->keyword??'no keyword available';
             $this->results[$key]['ranking'] = $key+1;
             $this->results[$key]['promoted'] = false; // getting a promoted results needs a special configuration in google control panel
         }
