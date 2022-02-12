@@ -9,8 +9,8 @@ composer require mossab/search-engine-crawler
 ```
 or you can add the package to your composer.json then `composer install`
 ```php
-    //...
   "require": {
+        //...
         "mossab/search-engine-crawler": "dev-main"
     }
 ```
