@@ -49,7 +49,7 @@ class SearchEngine
            if (!isset($result->queries->nextPage)) // if there is no next page then stop calling server
                break;
         }
-        return new KeywordResultsIterator($keywordArray);
+        return new KeywordResultsIterator($keywordArray,$keyword);
     }
 
     /**
@@ -61,7 +61,7 @@ class SearchEngine
         switch ($engine){
             case "google.ae": $this->engine = "&g1=ae";break;
             case "google.com": $this->engine = "";break;
-            default : throw new Exception('undefined search engine');
+            default : throw new Exception('unknown search engine');
         }
     }
 }
