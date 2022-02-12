@@ -1,6 +1,13 @@
 {
     "name": "mossab/search-engine-crawler",
-    "description": "test packaging",
+    "description": "php search engine crawler, collects 5 pages results and categorize",
+    "authors": [
+        {
+            "name": "Mossab Kbeisy",
+            "email": "moussab.kobisy@gmail.com",
+            "homepage": "https://github.com/Moussabkobisy"
+        }
+    ],
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
